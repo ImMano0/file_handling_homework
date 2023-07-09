@@ -6,5 +6,15 @@ def main(data:str):
     Returns:
         int: return answer
     """
-    
-# Read data from file
+    a = 0
+    for i in data:
+        if  i in ('123456790'):
+            a+=int(i)
+
+    return a 
+
+f = open('data/data03.txt')
+data = f.read() 
+f.close()
+
+print(main(data))
